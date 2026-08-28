@@ -25,27 +25,56 @@ Aucune donnée n'est envoyée automatiquement vers Trakt.
 
 Aucune dépendance Python externe n'est nécessaire.
 
-### Installation
+### Installation rapide depuis un terminal
 
-Télécharger le script :
-
-```bash
-plex-to-trakt.py
-```
-
-Puis le rendre exécutable :
+Si le dépôt est public, le script peut être téléchargé directement sur le serveur :
 
 ```bash
+mkdir -p ~/plex-to-trakt && cd ~/plex-to-trakt
+curl -fsSL https://raw.githubusercontent.com/kesurof/plex-to-trakt/main/plex-to-trakt.py -o plex-to-trakt.py
 chmod +x plex-to-trakt.py
-```
-
-Lancer :
-
-```bash
 ./plex-to-trakt.py
 ```
 
-Ou :
+Avec `wget` à la place de `curl` :
+
+```bash
+mkdir -p ~/plex-to-trakt && cd ~/plex-to-trakt
+wget -q https://raw.githubusercontent.com/kesurof/plex-to-trakt/main/plex-to-trakt.py
+chmod +x plex-to-trakt.py
+./plex-to-trakt.py
+```
+
+### Depuis Git
+
+Si Git est déjà configuré sur le serveur :
+
+```bash
+git clone https://github.com/kesurof/plex-to-trakt.git
+cd plex-to-trakt
+chmod +x plex-to-trakt.py
+./plex-to-trakt.py
+```
+
+Pour un dépôt privé avec une clé SSH GitHub configurée :
+
+```bash
+git clone git@github.com:kesurof/plex-to-trakt.git
+cd plex-to-trakt
+chmod +x plex-to-trakt.py
+./plex-to-trakt.py
+```
+
+### Lancements suivants
+
+Une fois installé, il suffit de revenir dans le dossier et de lancer le script :
+
+```bash
+cd ~/plex-to-trakt
+./plex-to-trakt.py
+```
+
+Il est également possible de le lancer directement avec Python :
 
 ```bash
 python3 plex-to-trakt.py
