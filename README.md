@@ -32,7 +32,6 @@ Si le dépôt est public, le script peut être téléchargé directement sur le 
 ```bash
 mkdir -p ~/plex-to-trakt && cd ~/plex-to-trakt
 curl -fsSL https://raw.githubusercontent.com/kesurof/plex-to-trakt/main/plex-to-trakt.py -o plex-to-trakt.py
-chmod +x plex-to-trakt.py
 ./plex-to-trakt.py
 ```
 
@@ -41,7 +40,6 @@ Avec `wget` à la place de `curl` :
 ```bash
 mkdir -p ~/plex-to-trakt && cd ~/plex-to-trakt
 wget -q https://raw.githubusercontent.com/kesurof/plex-to-trakt/main/plex-to-trakt.py
-chmod +x plex-to-trakt.py
 ./plex-to-trakt.py
 ```
 
@@ -52,7 +50,6 @@ Si Git est déjà configuré sur le serveur :
 ```bash
 git clone https://github.com/kesurof/plex-to-trakt.git
 cd plex-to-trakt
-chmod +x plex-to-trakt.py
 ./plex-to-trakt.py
 ```
 
@@ -61,7 +58,6 @@ Pour un dépôt privé avec une clé SSH GitHub configurée :
 ```bash
 git clone git@github.com:kesurof/plex-to-trakt.git
 cd plex-to-trakt
-chmod +x plex-to-trakt.py
 ./plex-to-trakt.py
 ```
 
